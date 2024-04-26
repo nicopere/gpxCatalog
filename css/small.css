@@ -1,0 +1,26 @@
+body {
+  width: auto;
+}
+.home, #description {
+  padding-left:  10px;
+  padding-right: 10px;
+}
+header {
+  flex-direction: column;
+}
+#logoSlogan {
+  align-items: center;
+}
+header h2 {
+  display: none;
+}
+.info {
+  display: none;
+}
+.leaflet-container {
+  height: 300px;
+  width:  600px;
+}
+#elevation {
+  display: none;
+}

@@ -1,0 +1,141 @@
+/* HEADER */
+:root {
+  --couleur1: aliceblue;
+  --couleur2: darkslategray;
+  --couleur3: teal;
+  --couleur4: midnightblue;
+}
+body {
+  background-color: var(--couleur1);
+  color: var(--couleur2);
+  font-family: sans-serif;
+  width: 800px;
+  margin: auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+#logoSlogan {
+  display: flex;
+  flex-direction: column;
+}
+#logo {
+  display: flex;
+  align-items: center;
+}
+#logo img {
+  width:  60px;
+  height: 60px;
+}
+header h1 {
+  font-family: fantasy;
+  font-weight: normal;
+  margin: 0 10px 0 10px;
+}
+header h2 {
+  font-family: cursive;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* MENUS */
+#menus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu1 {
+  display: flex;
+  margin-top: 15px;
+}
+.menu2 { /* Need a class here (_not_ an id) to override a property using another class. */
+  display: flex;
+  margin-bottom: 15px;
+}
+button { /* '#menus button' also prevents overidding with .selected */
+  font-family: serif;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  background-color: var(--couleur1);
+  color: var(--couleur3);
+  margin: 0 15px;
+  padding-bottom: 4px;
+}
+.clicked {
+  color: var(--couleur4);
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--couleur4);
+}
+button:hover {
+  background-color: var(--couleur3);
+  color: var(--couleur1);
+}
+#menu1 button {
+  text-transform: uppercase;
+}
+
+/* CONTENT */
+.catalog, .track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.hidden { /* Not before! */
+  display: none;
+}
+label {
+  font-family: serif;
+  color: var(--couleur3);
+}
+select {
+  font-family: serif;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  background-color: var(--couleur1);
+  color: var(--couleur3);
+}
+select:hover {
+  background-color: var(--couleur3);
+  color: var(--couleur1);
+}
+p {
+  text-align: justify;
+}
+a:link {
+  text-decoration: none;
+  color: var(--couleur3);
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  text-decoration: none;
+  color: var(--couleur4);
+}
+.leaflet-container { /*#catalog_map, #dedicated_map*/
+  height: 400px; max-height: 100%;
+  width:  800px; max-width:  100%;
+}
+#elevation { /* height is hard-coded somewhere */
+  width:  800px; max-width:  100%;
+}
+
+/*https://leafletjs.com/examples/choropleth/*/
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}

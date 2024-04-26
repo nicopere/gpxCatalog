@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>B(r)est GPX collection</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/nicopere.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="">
+    </script>
+    <script src="https://unpkg.com/leaflet-gpx@1.7.0/gpx.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation@2.5.0/dist/leaflet-elevation.min.css" />
+    <script src="https://unpkg.com/@raruto/leaflet-elevation@2.5.0/dist/leaflet-elevation.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" media="all and (max-width: 800px)" href="css/small.css" />
+    <script src="js/files.js"></script>
+    <script src="js/menus.js" defer></script>
+    <script src="js/myKeys.js"></script>
+    <script src="js/leaflet-common.js"></script>
+    <script src="js/leaflet-catalog.js" defer></script>
+    <script src="js/leaflet-dedicated.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="logoSlogan">
+        <div id="logo">
+          <img src="img/giant_anyroad.jpg" alt="gravel bike" />
+          <h1>GPX:cyclo|Brest</h1>
+        </div>
+        <h2>Une collection de traces GPX route/gravel autour de Brest</h2>
+      </div>
+      <div id="menus">
+        <div id="menu1">
+          <button id="btnHome" class="clicked">Home</button>
+          <button id="btnRoad">Road</button>
+          <button id="btnGravel">Gravel</button>
+        </div>
+        <div class="menu2 hidden">
+          <button id="btnCatalog">Catalog</button>
+          <button id="btnTrack">Details</label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="home">
+        <p>Your intro here (e.g. Who, What, Where, When, Why ?).<br />
+           [of course you also need to change the site name, title and favicon, logo and slogan]</p>
+      </section>
+      <section class="catalog hidden">
+        <div id="catalog_map"></div>
+      </section>
+      <section class="track hidden">
+        <div>
+          <label for="ddlTracks">Choose a track:</label>
+          <select id="ddlTracks"></select>
+        </div>
+        <div id="description"></div>
+        <div id="dedicated_map"></div>
+        <div id="elevation"></div>
+      </section>
+    </main>
+  </body>
+</html>
