@@ -70,7 +70,7 @@ function catalogMap() {
       this._div.innerHTML = gpx
       ?`<h4>${gpx.get_name()}</h4>
         Distance: ${Math.round(gpx.get_distance()/1000)} km<br />
-        Elevation gain: ${gpx.get_elevation_gain()} m<br />
+        Elevation gain: ${Math.round(gpx.get_elevation_gain())} m<br />
         (click to access directly the detailed map)`
       :'<h4>Length and elevation</h4>Hover on a track (without clicking)';
     };
