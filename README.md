@@ -60,4 +60,5 @@ The site will then automatically take your new data into account.
 
 ## Caveats
 
-* Switching too fast in the menus might get the maps confused... in such a case one needs to reload the page (`Ctrl-R`).
+* Switching too fast in the menus might get the maps confused... in such a case one needs to reload the page (`F5` or `Ctrl+R`).
+* Reloading the page is also necessary to enjoy the latest tracks.
